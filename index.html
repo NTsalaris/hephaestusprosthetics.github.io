@@ -6,31 +6,69 @@
     <title>Ηφαίστου Προσθετικά</title>
     <style>
         body {
-            background-color: black;
+            background-color: #1e1e1e; /* Σκούρο γκρι φόντο */
             color: white;
-            font-family: sans-serif;
-            text-align: center; /* Κεντράρισμα του περιεχομένου */
+            font-family: 'Arial', sans-serif; /* Πιο μοντέρνα γραμματοσειρά */
+            text-align: center;
+            margin: 0; /* Αφαίρεση περιθωρίων */
+            padding: 0; /* Αφαίρεση padding */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ελάχιστο ύψος ίσο με το ύψος της οθόνης */
         }
 
+        .container {
+            flex: 1; /* Περικλείει το περιεχόμενο και το κεντράρει κάθετα */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .logo {
-            width: 200px; /* Μέγεθος του λογότυπου */
-            margin: 20px auto; /* Κεντράρισμα του λογότυπου */
-            display: block; /* Μετατροπή του λογότυπου σε στοιχείο block για κεντράρισμα */
+            width: 200px;
+            margin-bottom: 20px;
         }
 
         .prosthetic-hand {
-            width: 50%; /* Μέγεθος της εικόνας του προσθετικού χεριού */
-            max-width: 400px; /* Μέγιστο πλάτος της εικόνας */
-            margin: 20px auto; /* Κεντράρισμα της εικόνας */
-            display: block; /* Μετατροπή της εικόνας σε στοιχείο block για κεντράρισμα */
+            max-width: 500px;
+            width: 80%;
+            border-radius: 8px; /* Στρογγυλεμένες γωνίες */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Προσθήκη σκιάς */
+            margin-bottom: 20px;
+
         }
+
+        p {
+             max-width: 800px;
+             margin: 0 auto; /* Κεντράρισμα του κειμένου */
+             line-height: 1.6; /* Καλύτερη αναγνωσιμότητα */
+             padding: 0 20px; /* Προσθήκη padding στα πλάγια */
+         }
+
+        footer {
+             background-color: #333;
+             padding: 10px;
+             text-align: center;
+             font-size: 0.8em;
+             margin-top: auto; /* Τοποθέτηση του footer στο κάτω μέρος */
+
+        }
+
+
+
     </style>
 </head>
 <body>
-    <img src="logo.png" alt="Λογότυπο Ηφαίστου Προσθετικά" class="logo">
+<div class="container">
+        <img src="logo.png" alt="Λογότυπο Ηφαίστου Προσθετικά" class="logo">
+        <img src="prosthetic-hand.jpg" alt="Προσθετικό χέρι" class="prosthetic-hand">
+        <p>Η Ηφαίστου Προσθετικά ειδικεύεται στη δημιουργία προσθετικών μελών με τη χρήση τεχνολογίας 3D εκτύπωσης. Δημιουργούμε προσαρμοσμένα προσθετικά μέλη για να ενισχύσουμε τη ζωή των ανθρώπων που τα χρειάζονται.</p>
+</div>
 
-    <img src="prosthetic-hand.jpg" alt="Προσθετικό χέρι" class="prosthetic-hand">
+        <footer>
+            © 2023 Ηφαίστου Προσθετικά
+        </footer>
 
-    <p>Η Ηφαίστου Προσθετικά ειδικεύεται στη δημιουργία προσθετικών μελών με τη χρήση τεχνολογίας 3D εκτύπωσης. Δημιουργούμε προσαρμοσμένα προσθετικά μέλη για να ενισχύσουμε τη ζωή των ανθρώπων που τα χρειάζονται.</p>
+
 </body>
 </html>
