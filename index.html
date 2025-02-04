@@ -15,14 +15,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-             /* Add background image and make it fade */
-            background-image: url("logo.png"); /* Replace with your logo image path */
-            background-repeat: no-repeat;
-            background-position: center; /* Center the logo */
-            background-size: cover; /* Cover the entire background */
-            background-blend-mode: multiply; /* Blend mode for fading effect */
         }
-
 
         .container {
             flex: 1;
@@ -30,15 +23,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            backdrop-filter: blur(5px); /* Add a blur effect for better readability */
-            padding: 20px; /* Add padding around content */
-
         }
 
-
-
-        .logo { /* We might not need this anymore if the logo is the background */
-            display: none; /* Hide the separate logo image */
+        .logo {
+            width: 200px;
+            margin: 20px auto;
+            display: block;
         }
 
         .prosthetic-image {
@@ -48,8 +38,6 @@
             display: block;
             margin: 20px auto;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Add a subtle shadow */
-
         }
 
         p {
@@ -60,7 +48,7 @@
         }
 
         footer {
-            background-color: rgba(51, 51, 51, 0.8); /* Slightly transparent footer */
+            background-color: #333;
             padding: 10px;
             text-align: center;
             font-size: 0.8em;
@@ -73,15 +61,12 @@
             -webkit-text-fill-color: transparent;
             font-size: 2em;
             margin-bottom: 20px;
-            text-shadow: 0 0 5px rgba(0,0,0,0.3); /* Add a text shadow */
-
-
         }
 
-        .text-section {
+        .text-section { /* Added a class for the text section */
             max-width: 800px;
-            margin: 20px auto;
-            text-align: left;
+            margin: 20px auto; /* Added margin */
+            text-align: left; /* Align text to the left */
             padding: 0 20px;
         }
     </style>
@@ -89,13 +74,14 @@
 <body>
 <div class="container">
     <h1>Hephaestus Prosthetics</h1>
-
+    <img src="logo.png" alt="Hephaestus Prosthetics Logo" class="logo">
     <p>Hephaestus Prosthetics specializes in creating prosthetic limbs using 3D printing technology. We craft custom prosthetics to enhance the lives of those in need.</p>
     <img src="prosthetic_hand.png" alt="3D Printed Prosthetic Hand" class="prosthetic-image">
-    <div class="text-section"> 
-        <p>Our five-year plan focuses on continuous growth and improvement...</p>
-        <p>This photo-based modeling will allow us to create prosthetics that look and feel natural...</p>
-    </div>
+        <div class="text-section">  <!-- Added a div for the text -->
+            <p>Our five-year plan focuses on continuous growth and improvement. In the initial years, our priority is acquiring specialized 3D printers that will enable us to produce prosthetics with high precision and durability.  In our third year of operation, we plan to integrate cutting-edge technology that will allow clients to submit photographs of the limb they wish to replace. Utilizing Autodesk's advanced software, we will process these photographs, creating highly accurate and aesthetically pleasing 3D models.</p>
+           <p>This photo-based modeling will allow us to create prosthetics that look and feel natural, empowering users with confidence and restoring their sense of wholeness.  Hephaestus Prosthetics is committed to providing high-quality, accessible prosthetic limbs. </p>
+
+        </div> 
 
 </div>
 
