@@ -16,49 +16,78 @@
             flex-direction: column;
             min-height: 100vh;
         }
-.container {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .logo {
-        width: 200px;
-        margin: 20px auto;
-        display: block;
-    }
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .prosthetic-image {
-        max-width: 500px;
-        width: 80%;
-        height: auto;
-        display: block;
-        margin: 20px auto;
-        border-radius: 8px;
-    }
+        .logo {
+            width: 200px;
+            margin: 20px auto;
+            display: block;
+        }
 
-    p {
-        max-width: 800px;
-        margin: 0 auto;
-        line-height: 1.6;
-        padding: 0 20px;
-    }
+        .prosthetic-image {
+            max-width: 500px;
+            width: 80%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
 
-    footer {
-        background-color: #333;
-        padding: 10px;
-        text-align: center;
-        font-size: 0.8em;
-        margin-top: auto;
-    }
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
 
-    h1 {
-        background: linear-gradient(to right, #f3904f, #3b4371);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 2em;
-        margin-bottom: 20px;
-    }
-</style>
+        footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: auto;
+        }
+
+        h1 {
+            background: linear-gradient(to right, #f3904f, #3b4371);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .text-section { /* Added a class for the text section */
+            max-width: 800px;
+            margin: 20px auto; /* Added margin */
+            text-align: left; /* Align text to the left */
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Hephaestus Prosthetics</h1>
+    <img src="logo.png" alt="Hephaestus Prosthetics Logo" class="logo">
+    <p>Hephaestus Prosthetics specializes in creating prosthetic limbs using 3D printing technology. We craft custom prosthetics to enhance the lives of those in need.</p>
+    <img src="prosthetic_hand.png" alt="3D Printed Prosthetic Hand" class="prosthetic-image">
+        <div class="text-section">  <!-- Added a div for the text -->
+            <p>Our five-year plan focuses on continuous growth and improvement. In the initial years, our priority is acquiring specialized 3D printers that will enable us to produce prosthetics with high precision and durability.  In our third year of operation, we plan to integrate cutting-edge technology that will allow clients to submit photographs of the limb they wish to replace. Utilizing Autodesk's advanced software, we will process these photographs, creating highly accurate and aesthetically pleasing 3D models.</p>
+           <p>This photo-based modeling will allow us to create prosthetics that look and feel natural, empowering users with confidence and restoring their sense of wholeness.  Hephaestus Prosthetics is committed to providing high-quality, accessible prosthetic limbs. </p>
+
+        </div> 
+
+</div>
+
+<footer>
+    © 2025 Hephaestus Prosthetics
+</footer>
+
+</body>
+</html>
